@@ -1,10 +1,10 @@
-<div class="content-body">
+<div class="content-body bg-col">
     <div class="nav-bar">
         <p class="body-nav nav-pointer">Home</p>
         <p class="body-nav nav-pointer">Projects</p>
         <div class="mode-div">
             <p class="body-nav nav-pointer">Contact</p>
-            <img class="mode-icon" src="../assets/dark_mode_moon_icon.png" alt="image">
+            <img class="mode-icon" [src]="iconPath" (click)="toggleTheme()" alt="theme icon"/>
         </div>
     </div>
 </div>

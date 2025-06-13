@@ -1,7 +1,20 @@
-$font-size-body-small: 14px;
-$font-size-body-nav: 16px;
-$font-size-body-large: 18px;
-$font-size-heading-x: 36px;
-$font-size-heading-xl: 48px;
-$font-light-mode: #171214;
-$font-semi-bold: 600;
+:root {
+  --font-size-body-small: 14px;
+  --font-size-body-nav: 16px;
+  --font-size-body-large: 18px;
+  --font-size-heading-x: 36px;
+  --font-size-heading-xl: 48px;
+  --font-semi-bold: 600;
+}
+
+/* Light Theme (default) */
+body {
+  --bg-color: #F6EEF2;
+  --font-color: #171214;
+}
+
+/* Dark Theme (toggles on body) */
+body.dark-theme {
+  --bg-color: #171214;
+  --font-color: #F6EEF2;
+}
