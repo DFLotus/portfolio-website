@@ -9,7 +9,24 @@
     margin: auto;
     width: 50%;
 }
-.nav-bar{
+
+.nav-bar {
     display: flex;
     justify-content: space-between;
+}
+
+.nav-pointer {
+    cursor: pointer;
+}
+
+.mode-div {
+    display: flex;
+    align-items: center;
+}
+
+.mode-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+    cursor: pointer;
 }

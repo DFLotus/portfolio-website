@@ -2,20 +2,26 @@
 
 .body-small {
     font-size: $font-size-body-small;
+    color: $font-light-mode;
 }
 
 .body-nav {
-    font-size: $font-size-body-nav
+    font-size: $font-size-body-nav;
+    font-weight: $font-semi-bold;
+    color: $font-light-mode;
 }
 
 .body-large {
     font-size: $font-size-body-large;
+    color: $font-light-mode;
 }
 
 .heading-x {
     font-size: $font-size-heading-x;
+    color: $font-light-mode;
 }
 
 .heading-xl {
     font-size: $font-size-heading-xl;
+    color: $font-light-mode;
 }
