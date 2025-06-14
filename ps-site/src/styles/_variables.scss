@@ -18,3 +18,8 @@ body.dark-theme {
   --bg-color: #171214;
   --font-color: #F6EEF2;
 }
+
+//dark-theme is global & styles that rely on it should be global b/c of Angular’s ViewEncapsulation 
+body.dark-theme .contact-icon {
+  filter: invert(1);
+}

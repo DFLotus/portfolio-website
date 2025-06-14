@@ -31,15 +31,48 @@
     cursor: pointer;
 }
 
-.hero-section{
+.hero-section {
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
     gap: 1rem;
 }
 
-.hero-body{
+.hero-body {
     padding: 0;
     margin: 0;
     text-align: left;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.resume-link {
+    text-decoration: none;
+}
+
+.resume-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    outline: solid;
+    border-radius: 8px;
+    outline-offset: 2px;
+    outline-color: var(--font-color);
+}
+
+.resume-text {
+    padding: 0%;
+    margin: 0%;
 }
