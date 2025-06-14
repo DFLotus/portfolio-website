@@ -30,3 +30,16 @@
     margin-left: 12px;
     cursor: pointer;
 }
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.hero-body{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
