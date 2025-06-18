@@ -113,3 +113,54 @@
 .Database {
     background-color: #7F4B4B;
 }
+
+.Experience{
+    background-color: #6F4B7F;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    outline: solid;
+    border-radius: 2px;
+    outline-offset: 2px;
+    outline-color: var(--font-color);
+    padding-bottom: 3rem;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.experience-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.experience-icon {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+    outline: solid;
+    outline-offset: 2px;
+    outline-color: var(--font-color);
+}
+
+.experience-date {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.experience-text {
+    margin: 0;
+    padding: 0;
+}
