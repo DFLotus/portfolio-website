@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -7,9 +7,13 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
-export class App {
-  isDarkMode: boolean = false;
-  iconPath: string = "../assets/dark_mode_moon_icon.png";
+export class App implements OnInit {
+  isDarkMode: boolean = true;
+  iconPath: string = "../assets/light_mode_sun_icon.png";
+
+  ngOnInit(): void {
+    document.body.classList.add('dark-theme');
+  }
 
   toggleTheme(): void {
     this.isDarkMode = !this.isDarkMode;
@@ -17,15 +21,11 @@ export class App {
     const body: any = document.body;
 
     if (this.isDarkMode) {
-      //Make it dark mode
       body.classList.add('dark-theme');
       this.iconPath = "../assets/light_mode_sun_icon.png";
-    }
-    else {
+    } else {
       body.classList.remove('dark-theme');
       this.iconPath = "../assets/dark_mode_moon_icon.png";
     }
-
   }
-
 }

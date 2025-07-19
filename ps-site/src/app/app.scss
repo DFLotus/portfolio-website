@@ -118,7 +118,7 @@
     background-color: #6F4B7F;
 }
 
-.Project{
+.Project {
     background-color: #425775;
 }
 
@@ -169,6 +169,21 @@
     padding: 0;
 }
 
+.project-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.url-container {
+    text-decoration: none;
+}
+
+.url-text {
+    color: #82767B;
+    cursor: pointer;
+}
+
 .project-container {
     display: flex;
     flex-direction: column;
@@ -182,23 +197,23 @@
 }
 
 .project-card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 28rem;
-  border: 2px solid var(--font-color);
-  border-radius: 8px;
-  overflow: hidden; 
-  background-color: transparent;
-  padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 28rem;
+    border: 2px solid var(--font-color);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 1rem;
 }
 
 .project-img {
-  width: 100%;
-  height: 160px; 
-  object-fit: cover;
-  border-radius: 6px 6px 0 0;
-  margin-bottom: 1rem;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 1rem;
 }
 
 .project-text {
@@ -207,12 +222,12 @@
     margin-top: 4px;
 }
 
-.project-skills{
+.project-skills {
     margin-top: 1rem;
     margin-bottom: 4px;
 }
 
-.project-icons{
+.project-icons {
     margin-top: 1rem;
     padding-left: 4px;
 }
