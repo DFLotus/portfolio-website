@@ -23,3 +23,14 @@ body.dark-theme {
 body.dark-theme .contact-icon {
   filter: invert(1);
 }
+
+// ---- SCSS Breakpoints ----
+$breakpoint-phone: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+
+// ---- Phone properties ----
+$font-size-body-nav-phone: 14px;
+$font-size-body-large-phone: 16px;
+$font-size-heading-x-phone: 24px;
+$font-size-heading-xl-phone: 28px;

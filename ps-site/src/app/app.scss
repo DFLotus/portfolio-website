@@ -231,3 +231,21 @@
     margin-top: 1rem;
     padding-left: 4px;
 }
+
+@media (max-width: $breakpoint-phone) {
+    .content-body {
+        width: 80%;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .content-body {
+        width: 70%;
+    }
+}
+
+@media (max-width: $breakpoint-laptop) {
+    .content-body {
+        width: 70%;
+    }
+}
