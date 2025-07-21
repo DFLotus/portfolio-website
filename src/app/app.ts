@@ -9,7 +9,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App implements OnInit {
   isDarkMode: boolean = true;
-  iconPath: string = "../assets/light_mode_sun_icon.png";
+  iconPath: string = "./assets/light_mode_sun_icon.png";
 
   ngOnInit(): void {
     document.body.classList.add('dark-theme');
@@ -22,10 +22,10 @@ export class App implements OnInit {
 
     if (this.isDarkMode) {
       body.classList.add('dark-theme');
-      this.iconPath = "../assets/light_mode_sun_icon.png";
+      this.iconPath = "./assets/light_mode_sun_icon.png";
     } else {
       body.classList.remove('dark-theme');
-      this.iconPath = "../assets/dark_mode_moon_icon.png";
+      this.iconPath = "./assets/dark_mode_moon_icon.png";
     }
   }
 }
