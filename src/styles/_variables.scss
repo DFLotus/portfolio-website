@@ -1,0 +1,36 @@
+:root {
+  --font-size-body-small: 14px;
+  --font-size-body-nav: 16px;
+  --font-size-body-large: 18px;
+  --font-size-heading-x: 36px;
+  --font-size-heading-xl: 48px;
+  --font-semi-bold: 600;
+}
+
+/* Light Theme (default) */
+body {
+  --bg-color: #F6EEF2;
+  --font-color: #171214;
+}
+
+/* Dark Theme (toggles on body) */
+body.dark-theme {
+  --bg-color: #171214;
+  --font-color: #F6EEF2;
+}
+
+//dark-theme is global & styles that rely on it should be global b/c of Angular’s ViewEncapsulation 
+body.dark-theme .contact-icon {
+  filter: invert(1);
+}
+
+// ---- SCSS Breakpoints ----
+$breakpoint-phone: 425px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+
+// ---- Phone properties ----
+$font-size-body-nav-phone: 14px;
+$font-size-body-large-phone: 16px;
+$font-size-heading-x-phone: 24px;
+$font-size-heading-xl-phone: 28px;

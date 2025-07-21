@@ -1,0 +1,47 @@
+.body-small {
+  font-size: var(--font-size-body-small);
+  font-weight: var(--font-semi-bold);
+  color: var(--font-color);
+}
+
+.body-nav {
+  font-size: var(--font-size-body-nav);
+  font-weight: var(--font-semi-bold);
+  color: var(--font-color);
+}
+
+.body-large {
+  font-size: var(--font-size-body-large);
+  font-weight: var(--font-semi-bold);
+  color: var(--font-color);
+}
+
+.heading-x {
+  font-size: var(--font-size-heading-x);
+  color: var(--font-color);
+}
+
+.heading-xl {
+  font-size: var(--font-size-heading-xl);
+  color: var(--font-color);
+}
+
+/* Querie for Phone */
+@media (max-width: $breakpoint-phone) {
+  .body-nav {
+    font-size: $font-size-body-nav-phone;
+  }
+
+  .body-large {
+    font-size: $font-size-body-large-phone;
+  }
+
+  .heading-x {
+    font-size: $font-size-heading-x-phone;
+  }
+
+  .heading-xl {
+    font-size: $font-size-heading-xl-phone;
+  }
+
+}
