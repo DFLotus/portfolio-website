@@ -173,6 +173,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .url-container {
@@ -204,7 +205,6 @@
     border: 2px solid var(--font-color);
     border-radius: 8px;
     overflow: hidden;
-    background-color: transparent;
     padding: 1rem;
 }
 
@@ -236,11 +236,49 @@
     .content-body {
         width: 80%;
     }
+
+    .experience-card {
+        margin-left: 2rem;
+    }
+
+    .experience-info {
+        flex-wrap: nowrap;
+    }
+
+    .experience-text {
+        padding: 2px;
+    }
+
+    .project-card {
+        overflow: unset;
+        width: 20rem;
+    }
+
+    .project-card-container {
+        flex-wrap: wrap;
+    }
+
+    .project-img {
+        zoom: 0.85;
+    }
 }
 
 @media (max-width: $breakpoint-tablet) {
     .content-body {
         width: 70%;
+    }
+
+    .experience-card {
+        margin-left: 2rem;
+    }
+
+    .project-card {
+        overflow: unset;
+        width: 100%;
+    }
+
+    .project-card-container {
+        flex-wrap: wrap;
     }
 }
 
